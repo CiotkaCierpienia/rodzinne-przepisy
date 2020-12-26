@@ -3,9 +3,9 @@
     <img src="{{'https://api.flotiq.com/image/966x406/' + recipe.image[0].id }}.{{recipe.image[0].extension}}" alt="{{ recipe.name }}">
   </figure>
   <section class="post-full-content">
-    <h1 class="content-title">
+    <h2 class="content-title">
       {{ recipe.name }}
-    </h1>
+    </h2>
     <h4>
       <div>Liczba porcji: {{ recipe.servings }}</div>
       <div>Czas: {{ recipe.cookingTime }}</div>
@@ -14,7 +14,7 @@
     <section class="content-body">
       <div [innerHTML]="recipe.description"></div>
     </section>
-    <h2 class="content-title">Składniki</h2>
+    <h3 class="content-title">Składniki</h3>
     <section class="content-body">
 
       <label class="recipe-ingredients" *ngFor="let ingredient of recipe.ingredients">
@@ -25,7 +25,7 @@
         <input type="checkbox"></label>
       <p></p>
     </section>
-    <h2 class="content-title">Kroki</h2>
+    <h3 class="content-title">Kroki</h3>
     <section class="content-body" *ngIf="recipe.steps && recipe.steps.length" >
       <div class="recipe-step"  *ngFor="let step of recipe.steps; let i = index">
         <div class="recipe-step-index">

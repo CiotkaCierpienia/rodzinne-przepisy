@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/scully-recipes-starter'),
+      dir: require('path').join(__dirname, './coverage/rodzinne-przepis'),
       subdir: '.',
       reporters: [
         { type: 'html' },

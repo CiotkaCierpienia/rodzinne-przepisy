@@ -1,5 +1,5 @@
 [build]
   command = "bash ./build.sh && ng build --prod"
-  publish = "dist/scully-recipes-starter"
+  publish = "dist/rodzinne-przepisy"
 [template.environment]
   YOUR_FLOTIQ_API_KEY="YOUR FLOTIQ API KEY"
