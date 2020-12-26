@@ -3,23 +3,12 @@
     <div class="site-mast">
       <div class="site-mast-left">
         <a aria-current="page" class="" href="/">
-          <img class="site-logo" src="assets/images/logo.png" alt="Recipes with Flotiq.com">
-        </a>
-      </div>
-      <div class="site-mast-right">
-        <a href="https://twitter.com/flotiq" class="site-nav-item" target="_blank"
-           rel="noopener noreferrer">
-          <img class="site-nav-icon" src="assets/icons/twitter.svg" alt="Twitter">
-        </a>
-        <a href="https://www.facebook.com/Flotiq-104200727751200/" class="site-nav-item"
-           target="_blank" rel="noopener noreferrer">
-          <img class="site-nav-icon" src="assets/icons/facebook.svg" alt="Facebook">
+          <img class="site-logo" src="assets/images/logo.png" alt="Rodzinne przepisy">
         </a>
       </div>
     </div>
     <div class="site-banner" *ngIf="isHome">
-      <h1 class="site-banner-title">Bon Apetit!</h1>
-      <p class="site-banner-desc">Recipes with Flotiq</p>
+      <h1 class="site-banner-title">Rodzinne przepisy</h1>
     </div>
     <nav class="site-nav">
       <div class="site-nav-left"></div>
@@ -28,22 +17,13 @@
   </div>
 </header>
 
+<div>
+  <div *ngFor="let category of categories"><a href="/category/{{ category.slug }}/1">{{ category.name }}</a></div>
+</div>
+
 <main class="site-main">
   <div class="container">
     <router-outlet></router-outlet>
   </div>
 </main>
 
-<div class="viewport-bottom">
-  <footer class="site-foot">
-    <div class="site-foot-nav container">
-      <div class="site-foot-nav-left"><a aria-current="page" class="" href="/">Bon Apetit!</a> ©
-        2020 — Published with <a class="site-foot-nav-item" href="https://scully.io/" target="_blank"
-                                 rel="noopener noreferrer">Scully</a>
-      </div>
-      <div class="site-foot-nav-right">
-        <a href="https://flotiq.com">Adapted to Flotiq.com</a>
-      </div>
-    </div>
-  </footer>
-</div>

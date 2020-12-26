@@ -1,3 +1,5 @@
+export * from './contentCategory.service';
+import { ContentCategoryService } from './contentCategory.service';
 export * from './contentMedia.service';
 import { ContentMediaService } from './contentMedia.service';
 export * from './contentRecipe.service';
@@ -10,4 +12,4 @@ export * from './media.service';
 import { MediaService } from './media.service';
 export * from './searchAPI.service';
 import { SearchAPIService } from './searchAPI.service';
-export const APIS = [ContentMediaService, ContentRecipeService, GraphQLService, InternalService, MediaService, SearchAPIService];
+export const APIS = [ContentCategoryService, ContentMediaService, ContentRecipeService, GraphQLService, InternalService, MediaService, SearchAPIService];

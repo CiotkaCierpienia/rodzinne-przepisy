@@ -7,25 +7,25 @@
       {{ recipe.name }}
     </h1>
     <h4>
-      <div>Servings: {{ recipe.servings }} meals</div>
-      <div>Cooking time: {{ recipe.cookingTime }} minutes</div>
+      <div>Liczba porcji: {{ recipe.servings }}</div>
+      <div>Czas: {{ recipe.cookingTime }}</div>
     </h4>
     <hr>
     <section class="content-body">
       <div [innerHTML]="recipe.description"></div>
     </section>
-    <h2 class="content-title">Ingredients</h2>
+    <h2 class="content-title">Składniki</h2>
     <section class="content-body">
 
       <label class="recipe-ingredients" *ngFor="let ingredient of recipe.ingredients">
         <span>
           <strong> {{ ingredient.product }} </strong>
-          ( {{ ingredient.amount }} {{ ingredient.unit }})
+          ( {{ ingredient.amount }} {{ getTranslation(ingredient.unit) }})
         </span>
         <input type="checkbox"></label>
       <p></p>
     </section>
-    <h2 class="content-title">Steps</h2>
+    <h2 class="content-title">Kroki</h2>
     <section class="content-body" *ngIf="recipe.steps && recipe.steps.length" >
       <div class="recipe-step"  *ngFor="let step of recipe.steps; let i = index">
         <div class="recipe-step-index">

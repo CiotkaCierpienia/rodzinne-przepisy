@@ -29,7 +29,7 @@ import { Configuration }                                     from '../configurat
 })
 export class GraphQLService {
 
-    protected basePath = 'https://new-cms-staging.api.dev.cdwv.pl';
+    protected basePath = 'https://api.flotiq.com';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
     public encoder: HttpParameterCodec;

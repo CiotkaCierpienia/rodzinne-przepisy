@@ -242,7 +242,7 @@ export class InternalService {
 
     /**
      * Create new ConentTypeDefinition to store new type of ContentObjects
-     * @param contentTypeDefinitionSchema
+     * @param contentTypeDefinitionSchema 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
@@ -303,7 +303,7 @@ export class InternalService {
     /**
      * Update ConentTypeDefinition
      * @param id Id of content type definition
-     * @param contentTypeDefinitionSchema
+     * @param contentTypeDefinitionSchema 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */

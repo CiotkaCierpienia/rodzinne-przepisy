@@ -27,6 +27,8 @@ export interface Recipe {
     slug: string;
     image?: Array<DataSource>;
     steps?: Array<RecipeWithoutInternalAllOfSteps>;
+    video?: string;
+    category: Array<DataSource>;
     servings?: number;
     cookingTime?: string;
     description?: string;

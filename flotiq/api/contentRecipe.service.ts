@@ -89,9 +89,9 @@ export class ContentRecipeService {
     }
 
     /**
-     * Allows you to create or create and update up to 100 objects of Recipe type. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FbatchCreateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * Allows you to create or create and update up to 100 objects of Recipe type. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FbatchCreateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param updateExisting Overwrite existing objects
-     * @param recipeWithoutInternal
+     * @param recipeWithoutInternal 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
@@ -157,8 +157,8 @@ export class ContentRecipeService {
     }
 
     /**
-     * Allows you to create object of Recipe type. Please mind, that you are responsible for generating a unique object ID yourself.&lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FcreateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
-     * @param recipeWithoutInternal
+     * Allows you to create object of Recipe type. Please mind, that you are responsible for generating a unique object ID yourself.&lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FcreateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * @param recipeWithoutInternal 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
@@ -217,7 +217,7 @@ export class ContentRecipeService {
     }
 
     /**
-     * Removes Recipe object.&lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FdeleteRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * Removes Recipe object.&lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FdeleteRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param id ContentObject identifier
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
@@ -269,7 +269,7 @@ export class ContentRecipeService {
     }
 
     /**
-     * Returns all information about Recipe object. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FgetRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * Returns all information about Recipe object. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FgetRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param id ContentObject identifier
      * @param hydrate Should hydrate relations of object, for now only one level of hydration is possible
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
@@ -330,7 +330,7 @@ export class ContentRecipeService {
     }
 
     /**
-     * Get ids of removed Recipe objects. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FgetRemovedRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * Get ids of removed Recipe objects. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FgetRemovedRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param deletedAfter Date from which ids of removed objects should be returned
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
@@ -387,7 +387,7 @@ export class ContentRecipeService {
     }
 
     /**
-     * List objects of Recipe type. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FlistRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * List objects of Recipe type. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FlistRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param page Listing page number, 1-based
      * @param limit Page limit
      * @param orderBy Order by field
@@ -469,9 +469,9 @@ export class ContentRecipeService {
     }
 
     /**
-     * Allows update of the Recipe object, it has to have all fields, as this operation overwrites the object. All properties  not included in the payload will be lost. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fnew-cms-staging.api.dev.cdwv.pl%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Ddc98e5e87623e2d26fe2752a036d60df#%2FContent: Recipe%2FupdateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
+     * Allows update of the Recipe object, it has to have all fields, as this operation overwrites the object. All properties  not included in the payload will be lost. &lt;br /&gt;&lt;a target&#x3D;\&#39;_blank\&#39; href&#x3D;\&#39;https://apidoc.flotiq.com/?url&#x3D;https%3A%2F%2Fapi.flotiq.com%2Fapi%2Fv1%2Finternal%2Fopen-api-schema.json%3Fauth_token%3Dd79f07a976c0c4849edc5197d2a3cdb3#%2FContent: Recipe%2FupdateRecipe\&#39;&gt;&lt;code&gt;Try it out&lt;/code&gt;&lt;a&gt;
      * @param id ContentObject identifier
-     * @param recipeWithoutInternal
+     * @param recipeWithoutInternal 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */

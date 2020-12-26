@@ -14,6 +14,7 @@ export class SingleRecipeComponent implements OnInit {
   slug: string;
   image: Media;
   stepsImages: Media[] = [];
+  getTranslation;
 
   constructor(
     private flotiqService: ContentRecipeService,
@@ -31,6 +32,17 @@ export class SingleRecipeComponent implements OnInit {
         }
       });
     });
+
+    this.getTranslation = (trans) => {
+      switch(trans) {
+        case 'tablespoon':
+          return 'łyżek';
+        case 'teaspoon':
+          return 'łyżeczek';
+        default:
+          return trans;
+      }
+    }
   }
 
 }

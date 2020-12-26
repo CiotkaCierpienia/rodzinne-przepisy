@@ -15,10 +15,13 @@ import { AbstractContentTypeMetaDefinition } from './abstractContentTypeMetaDefi
 /**
  * Representation of content type definition in CMS
  */
-export interface ContentTypeDefinitionSchema {
+export interface ContentTypeDefinitionSchema { 
     name: string;
     label: string;
     workflowId?: string | null;
+    /**
+     * JSON Schema object defining structure. Extending AbstractContentTypeSchemaDefinition
+     */
     schemaDefinition: object;
     metaDefinition: AbstractContentTypeMetaDefinition;
     internal?: boolean;

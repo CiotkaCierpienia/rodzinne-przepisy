@@ -3,6 +3,7 @@ import { Configuration } from './configuration';
 import { HttpClient } from '@angular/common/http';
 
 
+import { ContentCategoryService } from './api/contentCategory.service';
 import { ContentMediaService } from './api/contentMedia.service';
 import { ContentRecipeService } from './api/contentRecipe.service';
 import { GraphQLService } from './api/graphQL.service';

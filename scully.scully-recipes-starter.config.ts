@@ -16,10 +16,27 @@ export const config: ScullyConfig = {
         resultsHandler: rawData => rawData.data
       }
     },
+    '/category/:slug/:page': {
+      type: 'json',
+      slug: {
+        url: 'https://api.flotiq.com/api/v1/content/recipe?page=1&limit=9&hydrate=1&filter=',
+        property: ['slug', 'page'],
+        headers: {
+          'X-AUTH-TOKEN': environment.flotiqApiKey
+        },
+        resultsHandler: rawData => {
+          const pages = [];
+          for (let i = 1; i <= rawData.total_pages; i++) {
+            pages.push({page: i});
+          }
+          return pages;
+        }
+      }
+    },
     '/:page': {
       type: 'json',
       page: {
-        url: 'https://api.flotiq.com/api/v1/content/recipe?page=1&limit=8&hydrate=1',
+        url: 'https://api.flotiq.com/api/v1/content/recipe?page=1&limit=9&hydrate=1',
         property: 'page',
         headers: {
           'X-AUTH-TOKEN': environment.flotiqApiKey
