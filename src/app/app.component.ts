@@ -9,7 +9,7 @@ import {Category} from "../../flotiq";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  isHome = false;
+  isHome = true;
   categories: Category[] = [];
 
   constructor(private location: Location,

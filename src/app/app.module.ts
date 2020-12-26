@@ -8,7 +8,6 @@ import { ApiModule, Configuration, ConfigurationParameters } from 'flotiq';
 import { RecipeModule } from './recipe/recipe.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { AboutComponent } from './about/about.component';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -20,7 +19,6 @@ export function apiConfigFactory(): Configuration {
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
   ],
   imports: [
     BrowserModule,

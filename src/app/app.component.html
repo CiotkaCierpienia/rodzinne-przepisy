@@ -11,15 +11,13 @@
       <h1 class="site-banner-title">Rodzinne przepisy</h1>
     </div>
     <nav class="site-nav">
-      <div class="site-nav-left"></div>
-      <div class="site-nav-right"><a class="site-nav-button" href="/about">About</a></div>
+      <div class="site-nav-left">
+        <div *ngFor="let category of categories"><a href="/category/{{ category.slug }}/1" class="site-nav-button">{{ category.name }}</a></div>
+      </div>
     </nav>
   </div>
 </header>
 
-<div>
-  <div *ngFor="let category of categories"><a href="/category/{{ category.slug }}/1">{{ category.name }}</a></div>
-</div>
 
 <main class="site-main">
   <div class="container">
