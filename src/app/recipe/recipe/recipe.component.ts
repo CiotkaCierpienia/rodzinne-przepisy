@@ -39,6 +39,10 @@ export class SingleRecipeComponent implements OnInit {
           return 'łyżek';
         case 'teaspoon':
           return 'łyżeczek';
+        case 'cup':
+          return 'szklanki';
+        case 'pcs':
+          return '';
         default:
           return trans;
       }

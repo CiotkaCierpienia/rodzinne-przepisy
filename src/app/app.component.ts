@@ -11,6 +11,7 @@ import {Category} from "../../flotiq";
 export class AppComponent implements OnInit {
   isHome = true;
   categories: Category[] = [];
+  q: string;
 
   constructor(private location: Location,
               private categoryListService: CategoryListService,
@@ -22,7 +23,6 @@ export class AppComponent implements OnInit {
       this.isHome = true;
     }
     this.categoryListService.getCategories().subscribe(categories => {
-      console.log(categories);
       this.categories = categories.data;
     })
   }

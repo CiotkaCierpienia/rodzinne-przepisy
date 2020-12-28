@@ -3,8 +3,11 @@
 
     <a class="post-card" href="recipe/{{recipe.slug}}">
       <header class="post-card-header">
-        <div class="post-card-image" *ngIf="recipe.image && recipe.image[0]"
+        <div class="post-card-image" *ngIf="recipe.image && recipe.image[0] && !recipe.image[0].dataUrl"
              style="background-image: url('{{'https://api.flotiq.com/image/286x180/' + recipe.image[0].id}}.{{recipe.image[0].extension}}');">
+        </div>
+        <div class="post-card-image" *ngIf="images && images[recipe.id]"
+             style="background-image: url('{{'https://api.flotiq.com/image/286x180/' + images[recipe.id].id}}.{{images[recipe.id].extension}}');">
         </div>
         <h2 class="post-card-title">{{ recipe.name }}</h2></header>
       <section class="post-card-tags">

@@ -1,18 +1,18 @@
 <header class="site-head">
   <div class="container">
-    <div class="site-mast">
-      <div class="site-mast-left">
-        <a aria-current="page" class="" href="/">
-          <img class="site-logo" src="assets/images/logo.png" alt="Rodzinne przepisy">
-        </a>
-      </div>
-    </div>
     <div class="site-banner" *ngIf="isHome">
-      <h1 class="site-banner-title">Rodzinne przepisy</h1>
+      <a aria-current="page" class="" href="/"><h1 class="site-banner-title">Rodzinne przepisy</h1></a>
     </div>
     <nav class="site-nav">
       <div class="site-nav-left">
         <div *ngFor="let category of categories"><a href="/category/{{ category.slug }}/1" class="site-nav-button">{{ category.name }}</a></div>
+      </div>
+      <div class="site-nav-left">
+        <form action="/">
+          <label for="q"></label>
+          <input type="text" name="q" id="q"/>
+          <button type="submit" class="site-nav-button search-button" >Szukaj</button>
+        </form>
       </div>
     </nav>
   </div>
