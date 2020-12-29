@@ -17,7 +17,7 @@ export class CategoryListService {
   getCategories(): Observable<CategoryList> {
     return this.transferState.useScullyTransferState(
       'categories',
-      this.flotiqService.listCategory(1, 10000, 'name', 'asc', 1)
+      this.flotiqService.listCategory(1, 10000, 'slug', 'asc', 1)
     );
   }
 }

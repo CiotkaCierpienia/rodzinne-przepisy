@@ -6,6 +6,9 @@
         <div class="post-card-image" *ngIf="recipe.image && recipe.image[0]"
              style="background-image: url('{{'https://api.flotiq.com/image/286x180/' + recipe.image[0].id}}.{{recipe.image[0].extension}}');">
         </div>
+        <div class="post-card-image" *ngIf="!(recipe.image && recipe.image[0] && !recipe.image[0].dataUrl)"
+             style="background: #c7d5d8;">
+        </div>
         <h2 class="post-card-title">{{ recipe.name }}</h2></header>
       <section class="post-card-tags">
         <div>

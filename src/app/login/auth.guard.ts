@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import {Md5} from 'ts-md5/dist/md5';
 
 import { LoginService } from './login.service';
 
@@ -12,8 +13,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const user = this.loginService.userValue;
-    console.log(user);
-    if (user) {
+    if (user && Md5.hashStr(user.data.organization) === "1164c6001a7012c5423b402dd85b320a") {
       // logged in so return true
       return true;
     }
