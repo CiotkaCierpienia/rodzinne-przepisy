@@ -799,6 +799,10 @@ h6 {
   background: var(--color-accent);
   border-radius: 6px;
   margin-right: 10px;
+  &.post-card-tags-no-background {
+    background: none;
+    padding: 4px 0;
+  }
 }
 
 .post-card-tag-icon {
@@ -1184,5 +1188,13 @@ h6 {
   margin-top: 30px;
   ul {
     list-style: none;
+  }
+}
+
+.recipe-icons {
+  width: 15px;
+  height: 15px;
+  &.wege-recipe {
+    color: forestgreen;
   }
 }

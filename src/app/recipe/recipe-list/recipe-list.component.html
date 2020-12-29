@@ -22,6 +22,18 @@
           <img class="post-card-tag-icon" alt="Cooking time" src="assets/images/clock-regular.svg">
           {{ recipe.cookingTime}}
         </div>
+        <div *ngIf="recipe.wegetarianskie" class="post-card-tags-no-background">
+          <img src="assets/images/seedling-solid.svg" alt="Wegetariańskie" title="Wegetariańskie" class="recipe-icons">
+        </div>
+        <div *ngIf="recipe.weganskie" class="post-card-tags-no-background">
+          <img src="assets/images/leaf-solid.svg" alt="Wegańskie" title="Wegańskie" class="recipe-icons">
+        </div>
+        <div *ngIf="recipe.ryby" class="post-card-tags-no-background">
+          <img src="assets/images/fish-solid.svg" alt="Ryby" title="Ryby" class="recipe-icons">
+        </div>
+        <div *ngIf="recipe.czosnek" class="post-card-tags-no-background">
+          <img src="assets/images/gem-solid.svg" alt="Czosnek" title="Czosnek" class="recipe-icons">
+        </div>
       </section>
       <footer class="post-card-footer">
         <div class="post-card-footer-left"></div>
