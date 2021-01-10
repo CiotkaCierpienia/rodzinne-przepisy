@@ -20,7 +20,7 @@
       <label class="recipe-ingredients" *ngFor="let ingredient of recipe.ingredients">
         <span>
           <strong> {{ ingredient.product }} </strong>
-          ( {{ ingredient.amount }} {{ getTranslation(ingredient.unit) }} )
+          <span *ngIf="ingredient.amount || ingredient.unit">({{ ingredient.amount }}<span *ngIf="ingredient.unit"> {{ getTranslation(ingredient.unit, ingredient.amount) }}</span>)</span>
         </span>
         <input type="checkbox"></label>
       <p></p>

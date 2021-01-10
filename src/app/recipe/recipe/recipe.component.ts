@@ -33,16 +33,20 @@ export class SingleRecipeComponent implements OnInit {
       });
     });
 
-    this.getTranslation = (trans) => {
+    this.getTranslation = (trans, amount) => {
       switch(trans) {
-        case 'tablespoon':
-          return 'łyżek';
-        case 'teaspoon':
-          return 'łyżeczek';
-        case 'cup':
-          return 'szklanki';
-        case 'pcs':
-          return '';
+        case 'łyżki':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+            ? 'łyżki' : (amount === 1 ? 'łyżka' : 'łyżek');
+        case 'łyżeczki':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+            ? 'łyżeczki' : (amount === 1 ? 'łyżeczka' : 'łyżeczek');
+        case 'szklanki':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+            ? 'szklanki' : (amount === 1 ? 'szklanka' : 'szklanek');
+        case 'opakowanie':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+            ? 'opakowania' : (amount === 1 ? 'opakowanie' : 'opakowań');
         default:
           return trans;
       }
