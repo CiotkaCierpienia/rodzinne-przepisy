@@ -36,16 +36,16 @@ export class SingleRecipeComponent implements OnInit {
     this.getTranslation = (trans, amount) => {
       switch(trans) {
         case 'łyżki':
-          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
             ? 'łyżki' : (amount === 1 ? 'łyżka' : 'łyżek');
         case 'łyżeczki':
-          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
             ? 'łyżeczki' : (amount === 1 ? 'łyżeczka' : 'łyżeczek');
         case 'szklanki':
-          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
             ? 'szklanki' : (amount === 1 ? 'szklanka' : 'szklanek');
         case 'opakowanie':
-          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5)
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
             ? 'opakowania' : (amount === 1 ? 'opakowanie' : 'opakowań');
         default:
           return trans;
