@@ -47,6 +47,18 @@ export class SingleRecipeComponent implements OnInit {
         case 'opakowanie':
           return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
             ? 'opakowania' : (amount === 1 ? 'opakowanie' : 'opakowań');
+        case 'ziarenko':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
+            ? 'ziarenka' : (amount === 1 ? 'ziarenko' : 'ziarenek');
+        case 'pęczek':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
+            ? 'pęczki' : (amount === 1 ? 'pęczek' : 'pęczków');
+        case 'słoik':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
+            ? 'słoiki' : (amount === 1 ? 'słoik' : 'słoików');
+        case 'liść':
+          return (amount < 1 || Math.floor(amount) < amount) || (amount%10 > 1 && amount%10 < 5 && !(amount > 10 || amount < 20))
+            ? 'liście' : (amount === 1 ? 'liść' : 'liści');
         default:
           return trans;
       }
